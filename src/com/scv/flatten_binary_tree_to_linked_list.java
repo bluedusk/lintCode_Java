@@ -9,9 +9,6 @@ package com.scv;
 
 
 
-
-
-
 public class flatten_binary_tree_to_linked_list {
 
     //Definition of TreeNode:
