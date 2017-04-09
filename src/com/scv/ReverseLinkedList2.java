@@ -19,7 +19,7 @@ public class ReverseLinkedList2 {
         // pointer to original head
         ListNode dummy = new ListNode(0);
         dummy.next = head;
-        head = dummy; // if starts from 1; we need a 'pre' pointer here
+        head = dummy; // if starts from 1; we need a 'pre' pointer here; so we have to move head one step back
 
         // move to m
         for (int i = 1; i<m; i++){
