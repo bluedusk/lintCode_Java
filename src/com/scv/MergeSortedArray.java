@@ -10,6 +10,7 @@ public class MergeSortedArray {
     /**
      * @param A and B: sorted integer array A and B.
      * @return: A new sorted integer array
+     * 三次扫描
      */
     public int[] mergeSortedArray(int[] A, int[] B) {
         // Write your code here
