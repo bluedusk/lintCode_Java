@@ -1,4 +1,4 @@
-package com.scv;
+package exhaustiveSearch;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -44,6 +44,13 @@ public class PermuteUnique {
 
     }
 
+    /**
+     *
+     * @param results
+     * @param list
+     * @param visited
+     * @param nums
+     */
      public void helper(ArrayList<List<Integer>> results,
                    ArrayList<Integer> list, int[] visited, int[] nums) {
         
