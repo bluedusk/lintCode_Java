@@ -9,6 +9,7 @@ import java.util.List;
  * combinationSum
  *
  * http://www.jiuzhang.com/solutions/combination-sum/
+ * https://www.kancloud.cn/kancloud/data-structure-and-algorithm-notes/73061
  */
 public class CombinationSum {
 
@@ -23,6 +24,7 @@ public class CombinationSum {
         List<Integer> list = new ArrayList<Integer>();
         if (num == null) return result;
 
+        // 去重
         int[] nums = removeDuplicates(num);
         helper(nums, 0, target, list, result);
 

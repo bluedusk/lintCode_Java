@@ -26,23 +26,26 @@ public class CombinationSum2 {
 
         return result;
     }
-    private void helper(int[] num, int pos, int gap,
+    private void helper(int[] nums, int pos, int gap,
                         List<Integer> list, List<List<Integer>> result) {
 
         if (gap == 0) {
-            // add new object for result
             result.add(new ArrayList<Integer>(list));
             return;
         }
 
-        for (int i = pos; i < num.length; i++) {
-            // cut invalid candidate
-            if (gap < num[i]) {
+        for (int i = pos; i < nums.length; i++) {
+            // ensure only the first same num is chosen, remove duplicate list
+            if (i != pos && nums[i] == nums[i - 1]) {
+                continue;
+            }
+            // cut invalid num
+            if (gap < nums[i]) {
                 return;
             }
-            list.add(num[i]);
-            // 注意是i可以重复使用，因此传入i而不是i+1
-            helper(num, i, gap - num[i], list, result);
+            list.add(nums[i]);
+            // i + 1 ==> only be used once
+            helper(nums, i + 1, gap - nums[i], list, result);
             list.remove(list.size() - 1);
         }
     }
