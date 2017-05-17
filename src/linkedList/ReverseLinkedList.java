@@ -1,4 +1,7 @@
-package com.scv;
+package linkedList;
+
+
+import common.ListNode;
 
 /**
  * Created by openworld on 17/4/8.
@@ -22,5 +25,20 @@ public class ReverseLinkedList {
             head = temp;
         }
         return prev;
+    }
+    // recursive
+    public ListNode reverse1(ListNode head) {
+        // case1: empty list
+        if (head == null) return head;
+        // case2: only one element list
+        if (head.next == null) return head;
+        // case3: reverse from the rest after head
+        ListNode newHead = reverse(head.next);
+        // reverse between head and head->next
+        head.next.next = head;
+        // unlink list from the rest
+        head.next = null;
+
+        return newHead;
     }
 }

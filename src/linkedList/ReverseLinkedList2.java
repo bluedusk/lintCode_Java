@@ -1,4 +1,7 @@
-package com.scv;
+package linkedList;
+
+
+import common.ListNode;
 
 /**
  * Created by openworld on 17/4/8.
