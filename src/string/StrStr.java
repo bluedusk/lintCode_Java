@@ -1,4 +1,4 @@
-package com.scv;
+package string;
 
 /**
  * Created by Lenovo on 2017/3/13.

@@ -18,7 +18,7 @@ import java.util.List;
  */
 
 
-public class LC3 {
+public class MaxPoints {
 
     static Point point1 = new Point(1,2);
     static Point point3 = new Point(0,0);

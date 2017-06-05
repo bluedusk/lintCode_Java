@@ -7,7 +7,7 @@ import java.util.Arrays;
  * Find the Missing Number
  * http://www.lintcode.com/en/problem/find-the-missing-number/
  */
-public class LC1 {
+public class FindMissing {
 
     /**
      * @param nums: an array of integers

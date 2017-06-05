@@ -4,7 +4,7 @@ package com.scv;
  * Created by openworld on 15/7/21.
  * Invert Binary Tree
  */
-public class LC2 {
+public class InvertBinaryTree {
 
 
     /**

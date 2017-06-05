@@ -4,7 +4,7 @@ package com.scv;
 
 
 
-public class LC4 {
+public class ReplaceBlank {
 
 
     static String test = "hello worl d                     ";
