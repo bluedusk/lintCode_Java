@@ -1,11 +1,16 @@
-package com.scv;
+package integerArray;
 
 import java.util.ArrayList;
 
 /**
  * Created by openworld on 17/4/9.
  * https://www.jiuzhang.com/solutions/recover-rotated-sorted-array/
- *
+ *首先可以想到逐步移位，但是这种方法显然太浪费时间，不可取。下面介绍利器『三步翻转法』，以[4, 5, 1, 2, 3]为例。
+ 首先找到分割点5和1
+ 翻转前半部分4, 5为5, 4，后半部分1, 2, 3翻转为3, 2, 1。整个数组目前变为[5, 4, 3, 2, 1]
+ 最后整体翻转即可得[1, 2, 3, 4, 5]
+ 由以上3个步骤可知其核心为『翻转』的in-place实现。使用两个指针，一个指头，一个指尾，使用for循环移位交换即可。
+
  * 注意三次reverse会得到结果；
  * 1. 前半部分
  * 2. 后半部分
