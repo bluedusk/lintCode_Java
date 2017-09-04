@@ -1,4 +1,4 @@
-package sort;
+package integerArray;
 
 /**
  * Created by Lenovo on 2017/4/12.
@@ -16,6 +16,7 @@ public class Median {
      * 九章的答案太难懂了
      */
     public static int median(int[] nums) {
+
         return sub(nums, 0, nums.length - 1, (nums.length + 1)/2);
     }
     private static int sub(int[] nums, int start, int end, int size) {

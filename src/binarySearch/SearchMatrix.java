@@ -1,4 +1,4 @@
-package com.scv;
+package binarySearch;
 
 /**
  * Created by openworld on 17/4/8.

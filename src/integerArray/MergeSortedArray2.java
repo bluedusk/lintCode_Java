@@ -1,10 +1,10 @@
-package com.scv;
+package integerArray;
 
 /**
  * Created by openworld on 17/3/5.
  * http://www.lintcode.com/zh-cn/problem/merge-two-sorted-arrays/
  */
-public class MergeSortedArray {
+public class MergeSortedArray2 {
 
 
     /**
