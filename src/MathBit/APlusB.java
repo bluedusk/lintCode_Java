@@ -1,4 +1,4 @@
-package com.scv;
+package MathBit;
 
 /**
  * Created by Lenovo on 2017/3/2.
@@ -33,7 +33,16 @@ public class APlusB {
         }
         return a;
     }
+    public int aplusb2(int a, int b) {
+        int result = a ^ b;
+        int carry = a & b;
+        carry <<= 1;
+        if (carry != 0) {
+            result = aplusb2(result, carry);
+        }
 
+        return result;
+    }
     public static void main(String[] args) {
         // write your code here
 
