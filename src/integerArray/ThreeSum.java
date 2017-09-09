@@ -51,7 +51,7 @@ public class ThreeSum {
         Map<Integer, Integer> hashmap = new HashMap<Integer, Integer>();
         for (int i = start; i < numbers.length; i++) {
             if (hashmap.containsKey(target - numbers[i])) {
-                ArrayList<Integer> item = new ArrayList<>();
+                ArrayList<Integer> item = new ArrayList<Integer>();
                 // 找到一个2sum
                 item.add(numbers[hashmap.get(target - numbers[i])]);
                 item.add(numbers[i]);
