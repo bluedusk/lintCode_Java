@@ -1,4 +1,4 @@
-package com.scv;
+package MathBit;
 
 import java.util.*;
 
