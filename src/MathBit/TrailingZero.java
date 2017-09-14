@@ -1,4 +1,4 @@
-package com.scv;
+package MathBit;
 
 /**
  * Created by Lenovo on 2017/3/2.
@@ -22,10 +22,20 @@ public class TrailingZero {
         return sum;
     }
 
+    // 递归
+    public int trailingZeroes(int n) {
+        if (n == 0) {
+            return 0;
+        } else if (n < 0) {
+            return -1;
+        } else {
+            return n / 5 + trailingZeroes(n / 5);
+        }
+    }
     public static void main(String[] args) {
         // write your code here
 
-        System.out.println(trailingZeros(100));
+        System.out.println(trailingZeros(11));
 
     }
 
