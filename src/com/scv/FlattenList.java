@@ -51,4 +51,28 @@ public class FlattenList {
         return result;
     }
 
+    public List<Integer> flatten1(List<NestedInteger> nestedList) {
+        // Write your code here
+        boolean isFlat = true;
+        List<NestedInteger> ls = nestedList;
+        // 层层解开，直到再没有list为止
+        while (isFlat) {
+            isFlat = false;
+            List<NestedInteger> newLs = new ArrayList<NestedInteger>();
+            for (NestedInteger ni : ls) {
+                if (ni.isInteger()) {
+                    newLs.add(ni);
+                } else {
+                    newLs.addAll(ni.getList());
+                    isFlat = true;
+                }
+            }
+            ls = newLs;
+        }
+        List<Integer> r = new ArrayList<Integer>();
+        for (NestedInteger ni : ls) {
+            r.add(ni.getInteger());
+        }
+        return r;
+    }
 }

@@ -2,6 +2,7 @@ package exhaustiveSearch;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 /**
  * Created by Lenovo on 2017/4/18.
@@ -16,13 +17,13 @@ public class SubsetsWithDup {
      * @param nums: A set of numbers.
      * @return: A list of lists. All valid subsets.
      */
-    public ArrayList<ArrayList<Integer>> subsetsWithDup(int[] nums) {
+    public List<List<Integer>> subsetsWithDup(int[] nums) {
         // write your code here
-        ArrayList<ArrayList<Integer>> result = new ArrayList<ArrayList<Integer>>();
+        List<List<Integer>> result = new ArrayList<List<Integer>>();
         if(nums == null) {
             return result;
         }
-        ArrayList<Integer> list = new ArrayList<Integer>();
+        List<Integer> list = new ArrayList<Integer>();
         //sort the array
         Arrays.sort(nums);
         //pos 表示当前位置指针
@@ -38,8 +39,8 @@ public class SubsetsWithDup {
      * @param nums
      * @param pos 当前位置指针
      */
-    private static void subsetsHelper(ArrayList<ArrayList<Integer>> result,
-                                      ArrayList<Integer> list, int[] nums, int pos) {
+    private static void subsetsHelper(List<List<Integer>> result,
+                                      List<Integer> list, int[] nums, int pos) {
 
         result.add(new ArrayList<Integer>(list));
 
