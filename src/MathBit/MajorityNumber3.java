@@ -54,7 +54,7 @@ public class MajorityNumber3 {
 
     private void removeKey(HashMap<Integer, Integer> counters) {
         Set<Integer> keySet = counters.keySet();
-        List<Integer> removeList = new ArrayList<>();
+        List<Integer> removeList = new ArrayList<Integer>();
         for (Integer key : keySet) {
             counters.put(key, counters.get(key) - 1);
             if (counters.get(key) == 0) {
