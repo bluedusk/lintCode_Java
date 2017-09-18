@@ -8,7 +8,7 @@ import java.util.Arrays;
  * Created by Lenovo on 2017/3/16.
  * http://www.lintcode.com/en/problem/subsets/
  * http://www.jiuzhang.com/solutions/subsets/
- * HARD
+ * HARD  九章的解法非常好是模板
  */
 public class Subsets {
 
