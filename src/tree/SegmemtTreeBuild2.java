@@ -1,4 +1,4 @@
-package com.scv;
+package tree;
 
 /**
  * Created by openworld on 15/9/29.
@@ -6,21 +6,14 @@ package com.scv;
  */
 
 
+import common.SegmentTreeNode;
+
 /**
  * Definition of SegmentTreeNode:
  **/
-class SegmentTreeNode {
-  public int start, end, max;
-  public SegmentTreeNode left, right;
-  public SegmentTreeNode(int start, int end, int max) {
-      this.start = start;
-      this.end = end;
-      this.max = max;
-      this.left = this.right = null;
-  }
-}
 
-public class segmemt_tree_build_ii {
+
+public class SegmemtTreeBuild2 {
     /**
      *@param A: a list of integer
      *@return: The root of Segment Tree

@@ -1,4 +1,6 @@
-package com.scv;
+package tree;
+
+import common.TreeNode;
 
 /**
  * Created by openworld on 15/7/21.
@@ -30,20 +32,14 @@ public class InvertBinaryTree {
 
     }
 
+    ///递归的实现非常简单，那么非递归的如何实现呢？
+    // 如果将递归改写成栈的实现，那么简单来讲就需要两个栈了，稍显复杂。
+    // 其实仔细观察此题可发现使用 level-order 的遍历次序也可实现。
+    // 即从根节点开始入队，交换左右节点，并将非空的左右子节点入队，从队列中取出节点，交换之，直至队列为空。
 
 
 
-}
 
 
 
-
-//Definition of TreeNode:
-class TreeNode {
-  public int val;
-  public TreeNode left, right;
-  public TreeNode(int val) {
-      this.val = val;
-      this.left = this.right = null;
-  }
 }
