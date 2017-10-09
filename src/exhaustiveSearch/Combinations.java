@@ -15,7 +15,7 @@ public class Combinations {
      * @param k: Given the numbers of combinations
      * @return: All the combinations of k numbers out of 1..n
      */
-    public List<List<Integer>> combine(int n, int k) {
+    public static List<List<Integer>> combine(int n, int k) {
         // write your code here
         List<List<Integer>> result = new ArrayList<List<Integer>>();
         List<Integer> list = new ArrayList<Integer>() ;
@@ -25,7 +25,7 @@ public class Combinations {
         return result;
     }
 
-    public void helper(int n, int k, int pos, List<Integer> list, List<List<Integer>> result){
+    public static void helper(int n, int k, int pos, List<Integer> list, List<List<Integer>> result){
         if (list.size() == k){
             // 注意！这里是添加一份拷贝，不是list
             result.add(new ArrayList<Integer>(list));
@@ -36,5 +36,14 @@ public class Combinations {
             helper(n,k,i+1,list,result);
             list.remove(list.size()-1);
         }
+    }
+
+    public static void main(String[] args){
+        String[] s = {};
+        int[] A = {};
+        int[][] AA = {};
+        String str1 = "";
+
+
     }
 }
