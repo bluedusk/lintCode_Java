@@ -17,7 +17,7 @@ public class SearchMatrix2 {
         // write your code here
 
         int occurrence = 0;
-        if (matrix == null || matrix[0] == null) {
+        if (matrix == null || matrix.length == 0 || matrix[0] == null ) {
             return occurrence;
         }
 

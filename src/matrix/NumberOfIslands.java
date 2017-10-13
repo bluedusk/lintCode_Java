@@ -1,4 +1,4 @@
-package integerArray;
+package matrix;
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -94,6 +94,7 @@ public class NumberOfIslands {
         return nums;
     }
 
+    // 一个联通的true全部置为false
     private void dfs(boolean[][] grid, int i, int j) {
         if (i < 0 || i >= m || j < 0 || j >= n) {
             return;

@@ -1,4 +1,4 @@
-package integerArray;
+package dp;
 
 /**
  * Created by Lenovo on 2017/10/4.
